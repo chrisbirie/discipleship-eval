@@ -1,0 +1,18 @@
+body {
+  background-size: 100% 130%;
+  //background-repeat:no-repeat;
+  background-origin: content-box;
+  //background-attachment;fixed;
+  background-color: #fff;
+  color: #0000; // BV : 333
+}
+p,ol,ul,td {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18 pm;
+}
+pre {
+  background-color: #000; //BV eee
+  padding: 10px;
+  font-size: 11px;
+}

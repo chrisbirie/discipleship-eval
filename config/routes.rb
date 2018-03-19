@@ -1,9 +1,7 @@
 Rails.application.routes.draw do
-  get 'home/index'
-
-  resources :posts
-  root :to => 'home#index'
-  get 'controller/:id/See Messages', :to => 'posts#show'
-  get 'controller/:id/Write Messages', :to => 'posts#new'
-
+  resources :evaluations
+  resources :questions
+  resources :people
+  resources :evaluation_responses
+  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

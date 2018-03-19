@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Evaluation:</strong>
+  <%= @evaluation_response.evaluation_id %>
+</p>
+
+<p>
+  <strong>Question:</strong>
+  <%= @evaluation_response.question_id %>
+</p>
+
+<p>
+  <strong>Response:</strong>
+  <%= @evaluation_response.response %>
+</p>
+
+<%= link_to 'Edit', edit_evaluation_response_path(@evaluation_response) %> |
+<%= link_to 'Back', evaluation_responses_path %>

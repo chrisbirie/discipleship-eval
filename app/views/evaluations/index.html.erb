@@ -6,7 +6,6 @@
   <thead>
     <tr>
       <th>Evaluation Id</th>
-      <th>Discipler Id</th>
       <th>Disciple Id</th>
       <th>Created At</th>
       <th>Updated At</th>
@@ -18,7 +17,6 @@
     <% @evaluations.each do |evaluation| %>
       <tr>
         <td><%= evaluation.id %></td>
-        <td><%= evaluation.discipler_id %></td>
         <td><%= evaluation.disciple_id %></td>
         <td><%= evaluation.created_at.localtime.strftime("%m/%d/%Y %H:%M:%S") %></td>
         <td><%= evaluation.updated_at.localtime.strftime("%m/%d/%Y %H:%M:%S") %></td>

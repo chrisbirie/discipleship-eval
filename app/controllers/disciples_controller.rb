@@ -69,6 +69,6 @@ class DisciplesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def disciple_params
-      params.require(:disciple).permit(:first_name, :last_name, :discipler_id)
+      params.require(:disciple).permit(:first_name, :last_name, :person_id)
     end
 end

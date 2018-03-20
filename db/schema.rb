@@ -10,14 +10,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180320050501) do
+ActiveRecord::Schema.define(version: 20180320195438) do
 
   create_table "disciples", force: :cascade do |t|
     t.string   "first_name"
     t.string   "last_name"
-    t.integer  "discipler_id"
-    t.datetime "created_at",   null: false
-    t.datetime "updated_at",   null: false
+    t.integer  "person_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "evaluation_responses", force: :cascade do |t|
@@ -30,10 +30,9 @@ ActiveRecord::Schema.define(version: 20180320050501) do
   end
 
   create_table "evaluations", force: :cascade do |t|
-    t.string   "discipler_id"
     t.string   "disciple_id"
-    t.datetime "created_at",   null: false
-    t.datetime "updated_at",   null: false
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
   end
 
   create_table "people", force: :cascade do |t|

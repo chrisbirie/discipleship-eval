@@ -4,6 +4,7 @@ class CreateEvaluationResponses < ActiveRecord::Migration[5.0]
       t.string :evaluation_id
       t.string :question_id
       t.string :response
+      t.text :comment
 
       t.timestamps
     end

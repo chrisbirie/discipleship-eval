@@ -15,5 +15,10 @@
   <%= @evaluation_response.response %>
 </p>
 
+<p>
+  <strong>Response:</strong>
+  <%= @evaluation_response.comment %>
+</p>
+
 <%= link_to 'Edit', edit_evaluation_response_path(@evaluation_response) %> |
 <%= link_to 'Back', evaluation_responses_path %>

@@ -5,9 +5,13 @@
 <table>
   <thead>
     <tr>
-      <th>Evaluation</th>
-      <th>Question</th>
+      <th>Response Id</th>
+      <th>Evaluation Id</th>
+      <th>Question Id</th>
       <th>Response</th>
+      <th>Comment</th>
+      <th>Created At</th>
+      <th>Updated At</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -15,9 +19,13 @@
   <tbody>
     <% @evaluation_responses.each do |evaluation_response| %>
       <tr>
+        <td><%= evaluation_response.id %></td>
         <td><%= evaluation_response.evaluation_id %></td>
         <td><%= evaluation_response.question_id %></td>
         <td><%= evaluation_response.response %></td>
+        <td><%= evaluation_response.comment %></td>
+        <td><%= evaluation_response.created_at.localtime.strftime("%m/%d/%Y %H:%M:%S") %></td>
+        <td><%= evaluation_response.updated_at.localtime.strftime("%m/%d/%Y %H:%M:%S") %></td>
         <td><%= link_to 'Show', evaluation_response %></td>
         <td><%= link_to 'Edit', edit_evaluation_response_path(evaluation_response) %></td>
         <td><%= link_to 'Destroy', evaluation_response, method: :delete, data: { confirm: 'Are you sure?' } %></td>

@@ -3,7 +3,6 @@ class CreateEvaluations < ActiveRecord::Migration[5.0]
     create_table :evaluations do |t|
       t.string :discipler_id
       t.string :disciple_id
-      t.string :date
 
       t.timestamps
     end

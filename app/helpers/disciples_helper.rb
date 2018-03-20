@@ -1,0 +1,2 @@
+module DisciplesHelper
+end
